@@ -1,0 +1,117 @@
+{
+    "server_list": {
+        "server": {
+            "comm": "tcp",
+            "host": "0.0.0.0",
+            "port": 5020,
+            "ignore_missing_slaves": true,
+            "framer": "socket",
+            "identity": {
+                "VendorName": "VendorName",
+                "ProductCode": "PC",
+                "VendorUrl": "https://github.com/pymodbus-dev/pymodbus",
+                "ProductName": "Prodcut Name",
+                "ModelName": "P1",
+                "MajorMinorRevision": "1.0.0"
+            }
+        },
+        "server_rtu": {
+            "comm": "serial",
+            "port": "COM12",
+            "stopbits": 1,
+            "bytesize": 8,
+            "parity": "N",
+            "baudrate": 115200,
+            "timeout": 3,
+            "reconnect_delay": 2,
+            "framer": "rtu",
+            "ignore_missing_slaves": true,
+            "identity": {
+                "VendorName": "VendorName",
+                "ProductCode": "PC",
+                "VendorUrl": "https://github.com/pymodbus-dev/pymodbus",
+                "ProductName": "Prodcut Name",
+                "ModelName": "P1",
+                "MajorMinorRevision": "1.0.0"
+            }
+        }
+    },
+    "device_list": {
+        "device": {
+            "setup": {
+                "co size": 16384,
+                "di size": 16384,
+                "hr size": 16384,
+                "ir size": 16384,
+                "shared blocks": true,
+                "type exception": true,
+                "defaults": {
+                    "value": {
+                        "bits": 0,
+                        "uint16": 0,
+                        "uint32": 0,
+                        "float32": 0.0,
+                        "string": " "
+                    },
+                    "action": {
+                        "bits": null,
+                        "uint16": null,
+                        "uint32": null,
+                        "float32": null,
+                        "string": null
+                    }
+                }
+            },
+            "invalid": [
+                1
+            ],
+            "write": [
+            ],
+            "bits": [
+            ],
+            "uint16": [
+                {"addr": 1280, "value": 7, "action": "increment", "parameters": {"minval": 0, "maxval": 12} },
+                {"addr": 1281, "value": 7, "action": "increment", "parameters": {"minval": 0, "maxval": 12} },
+                {"addr": 1282, "value": 7, "action": "increment", "parameters": {"minval": 0, "maxval": 12} },
+                {"addr": 1283, "value": 7, "action": "increment", "parameters": {"minval": 0, "maxval": 12} },
+                {"addr": 1284, "value": 0, "action": "increment", "parameters": {"minval": 100, "maxval": 120} },
+
+                {"addr": 4096, "value": 7, "action": "increment", "parameters": {"minval": 0, "maxval": 12} },
+                {"addr": 4097, "value": 7, "action": "increment", "parameters": {"minval": 0, "maxval": 12} },
+                {"addr": 4098, "value": 7, "action": "increment", "parameters": {"minval": 0, "maxval": 12} },
+                {"addr": 4099, "value": 7, "action": "increment", "parameters": {"minval": 0, "maxval": 12} },
+                {"addr": 4100, "value": 7, "action": "increment", "parameters": {"minval": 0, "maxval": 12} },
+                {"addr": 4101, "value": 7, "action": "increment", "parameters": {"minval": 0, "maxval": 12} },
+                {"addr": 4102, "value": 7, "action": "increment", "parameters": {"minval": 0, "maxval": 12} },
+                {"addr": 4103, "value": 7, "action": "increment", "parameters": {"minval": 0, "maxval": 12} },
+                {"addr": 4104, "value": 0, "action": "increment", "parameters": {"minval": 100, "maxval": 120} },
+                {"addr": 4105, "value": 0, "action": "increment", "parameters": {"minval": 100, "maxval": 120} },
+                {"addr": 4106, "value": 7, "action": "increment", "parameters": {"minval": 0, "maxval": 12} },
+                {"addr": 4107, "value": 7, "action": "increment", "parameters": {"minval": 0, "maxval": 12} },
+                {"addr": 4108, "value": 7, "action": "increment", "parameters": {"minval": 0, "maxval": 12} },
+                {"addr": 4109, "value": 7, "action": "increment", "parameters": {"minval": 0, "maxval": 12} },
+                {"addr": 4110, "value": 7, "action": "increment", "parameters": {"minval": 0, "maxval": 12} },
+                {"addr": 4111, "value": 7, "action": "increment", "parameters": {"minval": 0, "maxval": 12} },
+                {"addr": 4112, "value": 7, "action": "increment", "parameters": {"minval": 0, "maxval": 12} },
+                {"addr": 4113, "value": 7, "action": "increment", "parameters": {"minval": 0, "maxval": 12} },
+                {"addr": 4114, "value": 0, "action": "increment", "parameters": {"minval": 100, "maxval": 120} },
+                {"addr": 4115, "value": 0, "action": "increment", "parameters": {"minval": 100, "maxval": 120} },
+                
+                {"addr": 8192, "value": 7, "action": "increment", "parameters": {"minval": 0, "maxval": 12} },
+                {"addr": 8193, "value": 7, "action": "increment", "parameters": {"minval": 0, "maxval": 12} },
+                {"addr": 8194, "value": 7, "action": "increment", "parameters": {"minval": 0, "maxval": 12} },
+                {"addr": 8195, "value": 7, "action": "increment", "parameters": {"minval": 0, "maxval": 12} },
+                {"addr": 8196, "value": 0, "action": "increment", "parameters": {"minval": 1000, "maxval": 120} }
+            ],
+            "uint32": [
+            ],
+            "float32": [
+            ],
+            "string": [
+                {"addr": [1000, 1010], "value": "A_B_C_D_E_"}
+            ],
+            "repeat": [
+            ]
+        }
+    }
+}       
