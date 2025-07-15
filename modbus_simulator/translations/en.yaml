@@ -1,0 +1,13 @@
+configuration:
+  modbus_server_name:
+    name: Selected server entity
+    description: >-
+      Select which server entity is used from the sim_reg.json file
+  modbus_device_name:
+    name: Selected device entity
+    description: >-
+      Select which device entity is used from the sim_reg.json file
+
+network:
+  5020/tcp: "pymodbus Simulator Modbus TCP port (Should be match with your server entity port definition)"
+  8081/tcp: "pymodbus Simulator UI Management port"

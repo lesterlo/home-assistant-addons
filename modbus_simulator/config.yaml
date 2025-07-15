@@ -1,0 +1,27 @@
+name: "Modbus Simulator"
+description: "Modbus TCP simulator with user-configurable registers and port"
+version: "0.0.1"
+slug: "modbus_simulator"
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+startup: services
+
+schema:
+  modbus_server_name: str?
+  modbus_device_name: str?
+
+options:
+  modbus_server_name: "server"
+  modbus_device_name: "device"
+
+ports:
+  5020/tcp: 5020
+  8081/tcp: 8081
+
+map:
+  - addon_config:rw
