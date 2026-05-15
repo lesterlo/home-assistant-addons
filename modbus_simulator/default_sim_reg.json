@@ -4,7 +4,7 @@
             "comm": "tcp",
             "host": "0.0.0.0",
             "port": 5020,
-            "ignore_missing_slaves": true,
+            "ignore_missing_devices": true,
             "framer": "socket",
             "identity": {
                 "VendorName": "VendorName",
@@ -25,7 +25,7 @@
             "timeout": 3,
             "reconnect_delay": 2,
             "framer": "rtu",
-            "ignore_missing_slaves": true,
+            "ignore_missing_devices": true,
             "identity": {
                 "VendorName": "VendorName",
                 "ProductCode": "PC",
